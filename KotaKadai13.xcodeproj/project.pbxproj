@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B909ECF427D338F5005E4EF2 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B909ECF327D338F5005E4EF2 /* TableViewCell.swift */; };
 		B92F52A927D31AD3006FDB8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92F52A827D31AD3006FDB8D /* AppDelegate.swift */; };
 		B92F52AB27D31AD3006FDB8D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92F52AA27D31AD3006FDB8D /* SceneDelegate.swift */; };
 		B92F52AD27D31AD3006FDB8D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92F52AC27D31AD3006FDB8D /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B909ECF327D338F5005E4EF2 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		B92F52A527D31AD3006FDB8D /* KotaKadai13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KotaKadai13.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B92F52A827D31AD3006FDB8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B92F52AA27D31AD3006FDB8D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				B92F52A827D31AD3006FDB8D /* AppDelegate.swift */,
 				B92F52AA27D31AD3006FDB8D /* SceneDelegate.swift */,
 				B92F52AC27D31AD3006FDB8D /* ViewController.swift */,
+				B909ECF327D338F5005E4EF2 /* TableViewCell.swift */,
 				B92F52AE27D31AD3006FDB8D /* Main.storyboard */,
 				B92F52B127D31AD5006FDB8D /* Assets.xcassets */,
 				B92F52B327D31AD5006FDB8D /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B92F52AD27D31AD3006FDB8D /* ViewController.swift in Sources */,
+				B909ECF427D338F5005E4EF2 /* TableViewCell.swift in Sources */,
 				B92F52A927D31AD3006FDB8D /* AppDelegate.swift in Sources */,
 				B92F52AB27D31AD3006FDB8D /* SceneDelegate.swift in Sources */,
 			);
