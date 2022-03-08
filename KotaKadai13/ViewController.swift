@@ -21,6 +21,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.listLabel.text = datas[indexPath.row].key
         if datas[indexPath.row].value == false {
             cell.checkImage.isHidden = true
+        } else {
+            cell.checkImage.isHidden = false
         }
 
         return cell
