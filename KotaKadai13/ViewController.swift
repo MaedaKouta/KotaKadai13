@@ -7,24 +7,27 @@
 
 import UIKit
 
+struct CheckItem {
+    var name: String
+    var isChecked: Bool
+}
+
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    private let datas: KeyValuePairs = ["りんご": false, "みかん": true, "バナナ": false, "パイナップル": true]
+    private let checkItems: [CheckItem] = [
+        .init(name: "りんご", isChecked: false),
+        .init(name: "みかん", isChecked: true),
+        .init(name: "バナナ", isChecked: false),
+        .init(name: "パイナップル", isChecked: true),
+    ]
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return datas.count
+        return checkItems.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! TableViewCell
-
-        cell.listLabel.text = datas[indexPath.row].key
-        if datas[indexPath.row].value == false {
-            cell.checkImage.isHidden = true
-        } else {
-            cell.checkImage.isHidden = false
-        }
-
+        cell.configure(checkItem: checkItems[indexPath.row])
         return cell
     }
 
